@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #app {
+            width: 356px;
+            height: 512px;
+            margin: 10px auto;
+            background: url("img/bg.png") no-repeat;
+            position: relative;
+            cursor: url("img/cursor.ico"),pointer;
+        }
+        
+        .main {
+            width: 315px;
+            height: 315px;
+            position: absolute;
+            top: 149px;
+            left: 20px;
+        }
+        img {
+            position: absolute;
+            width: 44px;
+            height: 44px;
+            margin:1px;
+            display: block;
+        }
+        h2{
+            color:#fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <h2 id = "score"></h2>
+        <h2 id="time"></h2>
+    </div>
+    <audio class="bgm" src="music/bgm.mp3" autoplay loop></audio>
+    <audio class ="click" src="music/click.mp3"></audio>
+    <audio class ="falsemove" src="music/falsemove.mp3"></audio>
+    <audio class ="remove3" src="music/remove3.mp3"></audio>
+    <audio class ="remove4" src="music/remove4.mp3"></audio>
+    <audio class ="remove5" src="music/remove5.mp3"></audio>
+    <audio class ="crossRemove" src="music/crossRemove.mp3"></audio>
+    <audio class ="rowRemove" src="music/rowRemove.mp3"></audio>
+    <audio class ="sameNumberRemove" src="music/sameNumberRemove.mp3"></audio>
+    <audio class = "timeover" src="music/timeover.mp3"></audio>
+</body>
+<script src="js/Game.js"></script>
+<script src="js/Block.js"></script>
+<script src="js/Tool.js"></script>
+<script>
+    var game = new Game();
+</script>
+
+</html>
